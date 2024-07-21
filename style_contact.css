@@ -1,0 +1,148 @@
+body {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  width: 1300px;
+  margin-left: 24px;
+}
+.nav-bar {
+  padding: 10px;
+  width: 1290px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background-color: peachpuff;
+  border-radius: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-bar div ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.nav-bar div ul li {
+  list-style: none;
+}
+.nav-bar div ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav-bar div ul li a:hover {
+  font-size: 18px;
+  color: rgb(149, 219, 140);
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 530px;
+  width: 1300px;
+  border-radius: 14px;
+}
+.contact {
+  width: 650px;
+  height: 500px;
+  border-radius: 14px;
+  background-color: peachpuff;
+  padding: 10px;
+}
+.contact h1 {
+  font-size: 25px;
+  text-align: center;
+  margin: 30px;
+}
+.contact h3 {
+  text-align: center;
+
+  line-height: 2;
+}
+.contact h3 a {
+  text-decoration: none;
+  color: black;
+
+  line-height: 2;
+  font-weight: normal;
+}
+.contact h3 a:hover {
+  font-weight: bold;
+  color: rgb(180, 241, 87);
+}
+.contact iframe {
+  width: 200px;
+  height: 200px;
+  border-radius: 14px;
+  margin-left: 35%;
+}
+.thankyou {
+  width: 658px;
+  height: 460px;
+  border-radius: 14px;
+  background-color: peachpuff;
+  padding: 30px;
+}
+.thankyou h1 {
+  font-size: 25px;
+  text-align: center;
+}
+.thankyou h3 {
+  font-weight: normal;
+  margin: 35px;
+}
+.thankyou div {
+  margin: 35px;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.PROJECT1,
+.PROJECT2 {
+  width: 650px;
+  height: 650px;
+  border-radius: 14px;
+  background-color: peachpuff;
+  padding: 30px;
+}
+
+.PROJECT1 ul li,
+.PROJECT1 p,
+.PROJECT2 p {
+  font-weight: normal;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-message {
+  font-size: 24px;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* darker background for message */
+  border-radius: 5px;
+}
